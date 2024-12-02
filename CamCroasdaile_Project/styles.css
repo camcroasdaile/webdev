@@ -1,8 +1,66 @@
- img{
+.wholepage{
+    background-color:#e3d3c4;
+}
+
+/* Our story whole section*/
+.storypng{
     width: 747px;
     height: 420px;
 }
-
 .ourStory{
     display: flex;
+}
+/* "Our Story" */
+h1{
+    display: flex;
+    font-size: 50px;
+    color: #26552e;
+    /* font-family: ''; */
+}
+/* our story and paragraph */
+.story{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+}
+/* Paragraph */
+p{
+    font-size: 23px;
+    line-height: 140%;
+}
+
+/* Quote section*/
+.mainQuote{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    align-content:space-between ;
+    margin-top: 5rem;
+}
+/* Words */
+.quote{
+    height: 684.89px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 810px;
+    gap: 2rem;
+    margin-left: 40px;
+    justify-content: center;
+}
+.quoteFirst{
+    /* margin-left: 40px; */
+    font-size: 50px;
+    min-width: 810px;
+}
+.quoteSecond{
+    color: #26552e;
+    font-size: 27px;
+}
+.employee{
+    display:flex;
+    height: 45%;
 }
