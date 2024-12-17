@@ -1,5 +1,109 @@
 .wholepage{
-    background-color:#e3d3c4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+/* banner */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+.menuButton{
+    font-size: 60px;
+    width: 100px;
+}
+
+.logopng{
+    height: 120px;
+}
+
+
+/* Header */
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.leftHead{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+}
+.leftHead a{
+    display: flex;
+    background-color: #26552e;
+    color: white;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: solid;
+}
+.leftHead a:hover{
+    background-color: white;
+    color: #26552e;
+}
+h1{
+    text-align: center;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.ourMenu{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    justify-content: center;
+    width: 100%;
+    color: #26552e;
+    font-weight: bold;
+}
+.bigMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.coffee{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+}
+h5{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+p6{
+    font-size: 22px;
+    font-weight: bold;
+}
+p6::after{
+    display: flex;
+    justify-content: flex-end;
+    content: "CZK";
+}
+p7{
+    font-size: 20px;
+}
+h1{
+    display: flex;
+    font-size: 50px;
+    color: #26552e;
+    /* font-family: ''; */
 }
 
 /* Our story whole section*/
@@ -11,10 +115,12 @@
     display: flex;
 }
 /* "Our Story" */
-h1{
+h9{
     display: flex;
     font-size: 50px;
     color: #26552e;
+    font-weight: bold;
+    justify-content: center;
     /* font-family: ''; */
 }
 /* our story and paragraph */
@@ -22,45 +128,514 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
+    gap: 50px;
+    justify-content: center;
 }
-/* Paragraph */
+p9{
+    font-size: 23px;
+    line-height: 140%;
+    text-align: center;
+}
 p{
     font-size: 23px;
     line-height: 140%;
+    text-align: center;
 }
 
 /* Quote section*/
 .mainQuote{
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     align-content:space-between ;
-    margin-top: 5rem;
+    min-height: 685px;
 }
 /* Words */
 .quote{
-    height: 684.89px;
+    max-height: 685px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    min-width: 810px;
-    gap: 2rem;
-    margin-left: 40px;
+    max-width: 55%;
     justify-content: center;
 }
 .quoteFirst{
-    /* margin-left: 40px; */
     font-size: 50px;
-    min-width: 810px;
+    max-width: 810px;
+}
+.quoteFirst::before{
+    display: flex;
+    content: '"';
+    font-size: 80px;
 }
 .quoteSecond{
     color: #26552e;
     font-size: 27px;
 }
+.quoteSecond::after{
+    display: flex;
+    content: '"';
+    font-size: 80px;
+    color: black;
+    max-width: 92%;
+    justify-content: flex-end;
+}
 .employee{
     display:flex;
-    height: 45%;
+    width: 570px;
+    height: 685px;
+    /* height: 45%; */
+}
+
+/* OUR ADVANTAGES */
+.ourAdvantages{
+    display: flex;
+    flex-direction: column;
+}
+.ourAdv{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    justify-content: center;
+    color: #26552e;
+    font-weight: bold;
+}
+.advantages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.firstAdv{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    flex-direction: column;
+}
+.secondAdv{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    flex-direction: column;
+}
+.thirdAdv{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    flex-direction: column;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+p1{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.bean{
+    font-size: 40px;
+}
+
+/* gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+.gridOne{
+    width: 500px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    column-gap: 20px;
+}
+.gridTwo{
+    width: 500px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.gridThree{
+    width: 500px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.gridFour{
+    width: 500px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+/* locations */
+.locations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.left{
+    border-style: solid;
+}
+.right{
+    border-style: solid;
+}
+.allLocations{
+    display: flex;
+    flex-direction: row;
+}
+h4{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    color: #26552e;
+    height: 30px;
+}
+.bottomLoc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bottomLoc a{
+    display: flex;
+    background-color: #26552e;
+    color: white;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 17px;
+    text-decoration: none;
+    border-style: solid;
+}
+.bottomLoc a:hover{
+    background-color: white;
+    color: #26552e;
+}
+.bottomHour{
+    display: flex;
+    flex-direction: column;
+}
+.bottomAdd{
+    display: flex;
+    flex-direction: column;
+}
+p4{
+    font-weight: bold;
+    font-size: 20px;
+}
+p5{
+    font-size: 15px;
+}
+
+.cube{
+    width: 530px;
+}
+.cubeBlack{
+    width: 530px;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-style: solid;
+}
+.footlogo{
+    height: 165px;
+}
+.shop a{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.shop a:hover{
+    color: #26552e;
+}
+.shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.visit{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+p2{
+    font-weight: bold;
+    font-size: 18px;
+}
+p3{
+    font-size: 18px;
+}
+.social a{
+    font-size: 60px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+.social a:hover{
+    color: #26552e;
+}
+.space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Phone */
+@media screen and (max-width: 768px) {
+    .wholepage{
+        display: flex;
+        gap: 20px;
+    }
+    /* banner */
+    .logopng{
+        height: 85px;
+    }
+    .menuButton{
+        font-size: 40px;
+    }
+    /* header */
+    .headerpng{
+        display: none;
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    /* menu */
+    .menu{
+        display: flex;
+        gap: 50px;
+    }
+    .ourMenu{
+        font-size: 40px;
+    }
+    .bigMenu{
+        display: flex;
+    }
+    h5{
+        font-size: 25px;
+    }
+    p6{
+        font-size: 18px;
+    }
+    p7{
+        font-size: 16px;
+    }
+    /* our story */
+    .ourStory{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .storypng{
+        width: 100%;
+    }
+    .story{
+        display: flex;
+        align-items: center;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    p{
+        font-size: 30px;
+        text-align: center;
+    }
+    h9{
+        text-align: center;
+    }
+    /* Quote */
+    .mainQuote{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .employee{
+        width: 100%;
+    }
+    .quoteFirst{
+        font-size: 30px;
+    }
+    .quote{
+        margin: 0;
+    }
+    .quoteSecond{
+        font-size: 20px;
+    }
+    /* our advantages */
+    .ourAdv{
+        font-size: 40px;
+    }
+    .advantages{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .firstAdv{
+        width: 100%;
+    }
+    .secondAdv{
+        width: 100%;
+    }
+    .thirdAdv{
+        width: 100%;
+    }
+    p1{
+        font-size: 20px;
+    }
+    /* locations */
+    .locations{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .cube{
+        width: 100%;
+    }
+    .cubeBlack{
+        width: 100%;
+    }
+    .gallery{
+        display: none;
+    }
+    /* footer */
+    .footlogo{
+        height: 93px;
+    }
+    .shop a{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    p2{
+        font-size: 12px;
+    }
+    p3{
+        font-size: 12px;
+    }
+    .social a{
+        font-size: 40px;
+    }
+}  
+
+/* ipad */
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .wholepage{
+        display: flex;
+        gap: 50px;
+    }
+    /* banner */
+    .logopng{
+        height: 90px;
+    }
+    .menuButton{
+        font-size: 45px;
+    }
+    /* header */
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    /* menu */
+    .ourMenu{
+        font-size: 40px;
+    }
+    h5{
+        font-size: 30px;
+    }
+    /* Our Story */
+    .ourStory{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    h9{
+        font-size: 40px;
+    }
+    /* quote */
+    .mainQuote{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* our advantages */
+    .ourAdv{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    /* locations */
+    .locations{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .cube{
+        width: 100%;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+    .cubeBlack{
+        width: 100%;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+    /* gallery */
+    .gallery{
+        display: none;
+    }
+    /* footer */
+    .footlogo{
+        height: 105px;
+    }
+    .shop a{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p2{
+        font-size: 14px;
+    }
+    p3{
+        font-size: 14px;
+    }
+    .social a{
+        font-size: 40px;
+    }
 }
